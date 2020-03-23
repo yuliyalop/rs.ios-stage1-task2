@@ -47,6 +47,7 @@
             NSDateFormatter *dateFormatter = [NSDateFormatter new];
             dateFormatter.dateFormat = @"dd.MM.yyyy";
             weakSelf.blockC([dateFormatter stringFromDate:laterDate]);
+            [dateFormatter release];
         }
         
         
